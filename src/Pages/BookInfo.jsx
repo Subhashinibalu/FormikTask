@@ -54,7 +54,7 @@ const BookInfo = ({setId}) => {
                   style={{ width: "18rem", height: "18rem" }}
                 >
                   <div className="card-body">
-                    <p className="card-title fw-bold mb-3 fs-6 text-center ">
+                    <p className="card-title fw-bold fs-6 text-center ">
                       <span className="">
                         Book <i className="bi bi-journals"></i>:{" "}
                       </span>

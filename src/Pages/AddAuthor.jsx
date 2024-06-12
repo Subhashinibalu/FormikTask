@@ -61,6 +61,7 @@ const AddAuthor = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter the Author Name"
               />
+              <div className="text-danger">{formik.errors.Author}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">Author Birth Date</label>
@@ -73,6 +74,7 @@ const AddAuthor = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter Author's Birth Date"
               />
+              <div className="text-danger">{formik.errors.DOB}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">Author Bio</label>
@@ -85,6 +87,7 @@ const AddAuthor = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter Author's Bio"
               />
+              <div className="text-danger">{formik.errors.Bio}</div>
             </div>
 
             <div className="mb-3">
@@ -98,6 +101,7 @@ const AddAuthor = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter a Famous Book of the Author"
               />
+              <div className="text-danger">{formik.errors.Title}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">ISBN Number</label>
@@ -110,6 +114,7 @@ const AddAuthor = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter the ISBN number of the Famous Book"
               />
+              <div className="text-danger">{formik.errors.ISBN}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">Date Of Publication</label>
@@ -122,6 +127,7 @@ const AddAuthor = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Select date of publication"
               />
+              <div className="text-danger">{formik.errors.DOP}</div>
             </div>
 
             <button type="submit" className="btn btn-primary">

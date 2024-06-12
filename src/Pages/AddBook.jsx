@@ -59,7 +59,9 @@ const AddBook = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 placeholder="Enter the Book Title"
+                required
               />
+              <div className="text-danger">{formik.errors.Title}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">ISBN Number</label>
@@ -71,7 +73,9 @@ const AddBook = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 placeholder="Enter the ISBN number"
+                required
               />
+              <div className="text-danger">{formik.errors.ISBN}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">Date Of Publication</label>
@@ -84,6 +88,7 @@ const AddBook = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Select date of publication"
               />
+              <div className="text-danger">{formik.errors.DOP}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">Author Name</label>
@@ -96,6 +101,7 @@ const AddBook = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter the Author Name"
               />
+              <div className="text-danger">{formik.errors.Author}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">Author Date of Birth</label>
@@ -108,6 +114,7 @@ const AddBook = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter Author's Birth Date"
               />
+              <div className="text-danger">{formik.errors.DOB}</div>
             </div>
             <div className="mb-3">
               <label className="form-label">About Author</label>
@@ -120,6 +127,7 @@ const AddBook = () => {
                 onBlur={formik.handleBlur}
                 placeholder="Enter some more information about the Author"
               />
+              <div className="text-danger">{formik.errors.Bio}</div>
             </div>
 
             <button type="submit" className="btn btn-primary">
